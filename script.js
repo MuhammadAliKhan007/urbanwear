@@ -28,6 +28,14 @@ if (addToCartButton) {
             JSON.stringify(product)
         );
 
+        fbq('track', 'AddToCart', {
+    content_name: 'Black Oversized T-Shirt',
+    content_ids: ['urbanwear-black-tshirt'],
+    content_type: 'product',
+    value: 29.00,
+    currency: 'USD'
+});
+
         window.location.href = "cart.html";
 
     });

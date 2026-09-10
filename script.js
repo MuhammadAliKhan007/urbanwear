@@ -141,9 +141,7 @@ if (checkoutForm) {
 
 }
 
-const thankYouPage = document.getElementById("thank-you-page");
-
-if (thankYouPage) {
+if (window.location.pathname.endsWith("thank-you.html")) {
 
     fbq('track', 'Purchase', {
         content_ids: ['urbanwear-black-tshirt'],

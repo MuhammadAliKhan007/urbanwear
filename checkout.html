@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | UrbanWear</title>
+
+    <link rel="stylesheet" href="style.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1068644682471163');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068644682471163&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+    <header>
+
+        <h1>UrbanWear</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+        </nav>
+
+    </header>
+
+
+    <main class="checkout-page">
+
+        <p class="small-heading">CHECKOUT</p>
+
+        <h2>Complete Your Order</h2>
+
+
+        <div class="checkout-container">
+
+            <!-- Order Summary -->
+
+            <div class="order-summary">
+
+                <h3>Your Order</h3>
+
+                <div id="checkout-product">
+                    <!-- JavaScript will display the product here -->
+                </div>
+
+            </div>
+
+
+            <!-- Customer Information -->
+
+            <div class="customer-info">
+
+                <h3>Your Information</h3>
+
+                <form id="checkout-form">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="John Doe"
+                        required
+                    >
+
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="john@example.com"
+                        required
+                    >
+
+
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        placeholder="123 Main Street"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="button"
+                    >
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,3 +1,16 @@
+// ViewContent event
+if (window.location.pathname.endsWith("product.html")) {
+
+    fbq('track', 'ViewContent', {
+        content_name: 'Black Oversized T-Shirt',
+        content_ids: ['urbanwear-black-tshirt'],
+        content_type: 'product',
+        value: 29.00,
+        currency: 'USD'
+    });
+
+}
+
 const addToCartButton = document.getElementById("add-to-cart");
 
 if (addToCartButton) {

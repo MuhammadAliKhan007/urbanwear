@@ -140,3 +140,16 @@ if (checkoutForm) {
     });
 
 }
+
+const thankYouPage = document.getElementById("thank-you-page");
+
+if (thankYouPage) {
+
+    fbq('track', 'Purchase', {
+        content_ids: ['urbanwear-black-tshirt'],
+        content_type: 'product',
+        value: 29.00,
+        currency: 'USD'
+    });
+
+}
